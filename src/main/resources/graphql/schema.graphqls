@@ -1,0 +1,18 @@
+type Query {
+    findAllBusinessPartners: [BusinessPartner]
+    findOneBusinessPartnerByUuid(uuid: String): BusinessPartner
+}
+
+type BusinessPartner {
+    uuid: ID!
+    name: String!
+    name2: String
+    groupCount: Int!
+    tenant: Tenant
+}
+
+type Tenant {
+    uuid: ID!
+    name: String!
+    code: String!
+}
