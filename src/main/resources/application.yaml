@@ -1,0 +1,19 @@
+server:
+  port: 10000
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+
+de:
+  c4u:
+    gateway:
+      businessPartnerUrl: http://localhost:10011
+      tenantUrl: http://localhost:10021
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
